@@ -1,6 +1,6 @@
 /**
 * R_BODY
-* v 0.1.0
+* v 0.1.1
 * 2020-2020
 */
 #ifndef R_BODY_H
@@ -37,6 +37,16 @@ class R_Body {
 		void y(float y);
 		void z(float z);
 		void set(float x, float y, float z = 0);
+		void set(vec2<float> pos);
+		void set(vec3<float> pos);
+
+		void add(float x, float y, float z = 0);
+		void add(vec2<float> value);
+		void add(vec3<float> value);
+
+		void follow(float x, float y, float z = 0);
+		// void follow(vec2<float> target);
+		// void follow(vec3<float> target);
 
 		void size(float size);
 
@@ -48,9 +58,9 @@ class R_Body {
 		static bool _warning;
 
 	private:
-		float _x;
-		float _y;
-		float _z;
+		float _x = 0.0f;
+		float _y = 0.0f;
+		float _z = 0.0f;
 
 		float _size = 1.0f;
 

@@ -59,6 +59,56 @@ void R_Body::set(float x, float y, float z) {
 	this->_z = z;
 }
 
+void R_Body::set(vec2<float> pos) {
+	this->_x = pos.x();
+	this->_y = pos.y();
+}
+
+void R_Body::set(vec3<float> pos) {
+	this->_x = pos.x();
+	this->_y = pos.y();
+	this->_z = pos.z();
+}
+
+
+void R_Body::add(float x, float y, float z) {
+	this->_x += x;
+	this->_y += y;
+	this->_z += z;
+}
+
+void R_Body::add(vec2<float> pos) {
+	this->_x += pos.x();
+	this->_y += pos.y();
+}
+
+void R_Body::add(vec3<float> pos) {
+	this->_x += pos.x();
+	this->_y += pos.y();
+	this->_z += pos.z();
+}
+
+void R_Body::follow(float x, float y, float z) {
+	float dist = this->pos().dist(vec3<float>().set(x,y,z));
+	std::cout << "dist: " << dist << std::endl;
+	// this->_x += abs(this->_speed);
+	// this->_y += abs(this->_speed);
+	// this->_z += abs(this->_speed);
+}
+
+// void R_Body::follow(vec2<float> pos) {
+// 	this->_x += pos.x();
+// 	this->_y += pos.y();
+// }
+
+// void R_Body::follow(vec3<float> pos) {
+// 	this->_x += pos.x();
+// 	this->_y += pos.y();
+// 	this->_z += pos.z();
+// }
+
+
+
 void R_Body::size(float size) {
 	this->_size = size;
 }
