@@ -6,15 +6,23 @@
 class ofApp : public ofBaseApp{
 
 public:
+	// body part describe in of_rope_body.cpp
+	vec2<float> dest;
+	void body_setup();
+	void body_draw();
+
+
+
+
 	// rope part
 	Rope r;
 	R_Body body;
+	void rope();
+	// rope processing
 	float width = 0;
 	float height = 0;
 	float mouseX = 0;
 	float mouseY = 0;
-
-	void rope();
 
 
 	// openframwork part

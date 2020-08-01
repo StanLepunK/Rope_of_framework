@@ -40,18 +40,20 @@ class R_Body {
 		void set(vec2<float> pos);
 		void set(vec3<float> pos);
 
-		void add(float x, float y, float z = 0);
-		void add(vec2<float> value);
-		void add(vec3<float> value);
+		void translate(float x, float y, float z = 0);
+		void translate(vec2<float> value);
+		void translate(vec3<float> value);
 
-		void follow(float x, float y, float z = 0);
-		// void follow(vec2<float> target);
-		// void follow(vec3<float> target);
+		bool follow(float x, float y, float z = 0);
+		bool follow(vec2<float> dst);
+		bool follow(vec3<float> dst);
 
 		void size(float size);
 
 		void dir(float dir);
-		void speed(float speed);	
+		void speed(float speed);
+
+
 
 	protected:
 		static int instance;

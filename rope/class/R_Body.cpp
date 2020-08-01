@@ -71,41 +71,41 @@ void R_Body::set(vec3<float> pos) {
 }
 
 
-void R_Body::add(float x, float y, float z) {
+void R_Body::translate(float x, float y, float z) {
 	this->_x += x;
 	this->_y += y;
 	this->_z += z;
 }
 
-void R_Body::add(vec2<float> pos) {
+void R_Body::translate(vec2<float> pos) {
 	this->_x += pos.x();
 	this->_y += pos.y();
 }
 
-void R_Body::add(vec3<float> pos) {
+void R_Body::translate(vec3<float> pos) {
 	this->_x += pos.x();
 	this->_y += pos.y();
 	this->_z += pos.z();
 }
 
-void R_Body::follow(float x, float y, float z) {
-	float dist = this->pos().dist(vec3<float>().set(x,y,z));
-	std::cout << "dist: " << dist << std::endl;
-	// this->_x += abs(this->_speed);
-	// this->_y += abs(this->_speed);
-	// this->_z += abs(this->_speed);
+bool R_Body::follow(float x, float y, float z) {
+	vec3<float> dst(x,y,z);
+	float dist = this->pos().dist(dst);
+	if(_speed < dist) {
+		vec3<float> translate = dst.dir(this->pos()) * _speed;
+		this->translate(translate);
+		return true;
+	}
+	return false;
 }
 
-// void R_Body::follow(vec2<float> pos) {
-// 	this->_x += pos.x();
-// 	this->_y += pos.y();
-// }
+bool R_Body::follow(vec2<float> dst) {
+	return this->follow(dst.x(), dst.y());
+}
 
-// void R_Body::follow(vec3<float> pos) {
-// 	this->_x += pos.x();
-// 	this->_y += pos.y();
-// 	this->_z += pos.z();
-// }
+bool R_Body::follow(vec3<float> dst) {
+	return this->follow(dst.x(), dst.y(), dst.z());
+}
 
 
 
@@ -151,6 +151,7 @@ float R_Body::dir() const {
 float R_Body::speed() const {
 	return this->_speed;
 }
+
 
 
 
