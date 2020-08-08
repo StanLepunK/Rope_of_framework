@@ -5,7 +5,7 @@
 * V0.0.1
 */
 void ofApp::body_setup() {
-	dest.rand(vec2<float>(width,height));
+	dest.rand(vec2<float>(p5.width,p5.height));
 	body.set(dest);
 }
 
@@ -14,7 +14,7 @@ void ofApp::body_draw() {
 	// vec2<float> target(mouseX,mouseY);
 
 	if(!body.follow(dest)) {
-		dest.rand(vec2<float>(width,height));
+		dest.rand(vec2<float>(p5.width,p5.height));
 	}
 	// body.follow(target);
 	body.speed(0.5);

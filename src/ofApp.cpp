@@ -1,13 +1,13 @@
 #include "ofApp.hpp"
 
 void ofApp::setup() {
-	rope();
+	ofRope();
 	ofBackground(r.BLACK);
 	body_setup();
 }
 
 void ofApp::draw() {
-	rope();
+	ofRope();
 	body_draw();
 }
 

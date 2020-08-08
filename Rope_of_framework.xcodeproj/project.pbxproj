@@ -13,7 +13,7 @@
 		F6B5678524D30BE3008E48AF /* rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5677324D30BE3008E48AF /* rope.cpp */; };
 		F6B5678624D30BE3008E48AF /* rope_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5677424D30BE3008E48AF /* rope_functions.cpp */; };
 		F6B5678724D30BE3008E48AF /* R_Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5678024D30BE3008E48AF /* R_Body.cpp */; };
-		F6B5678A24D332B5008E48AF /* ofRope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5678924D332B5008E48AF /* ofRope.cpp */; };
+		F6BB8B8224DEA31000C466C1 /* ofRope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BB8B8024DEA31000C466C1 /* ofRope.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -224,8 +224,8 @@
 		F6B5678224D30BE3008E48AF /* R_Lexicon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = R_Lexicon.hpp; sourceTree = "<group>"; };
 		F6B5678324D30BE3008E48AF /* rope.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rope.hpp; sourceTree = "<group>"; };
 		F6B5678424D30BE3008E48AF /* rope_functions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rope_functions.hpp; sourceTree = "<group>"; };
-		F6B5678824D30C81008E48AF /* ofRope.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofRope.hpp; sourceTree = "<group>"; };
-		F6B5678924D332B5008E48AF /* ofRope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofRope.cpp; sourceTree = "<group>"; };
+		F6BB8B8024DEA31000C466C1 /* ofRope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofRope.cpp; sourceTree = "<group>"; };
+		F6BB8B8124DEA31000C466C1 /* ofRope.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofRope.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -551,9 +551,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F6BB8B7F24DEA31000C466C1 /* ofRope */,
 				F64859EC24D5C03800CCC544 /* of_rope_body.cpp */,
-				F6B5678924D332B5008E48AF /* ofRope.cpp */,
-				F6B5678824D30C81008E48AF /* ofRope.hpp */,
 				F6B5677224D30BE3008E48AF /* rope */,
 				F6B5677024D30A0B008E48AF /* ofApp.hpp */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
@@ -620,6 +619,15 @@
 				F6B5678224D30BE3008E48AF /* R_Lexicon.hpp */,
 			);
 			path = class;
+			sourceTree = "<group>";
+		};
+		F6BB8B7F24DEA31000C466C1 /* ofRope */ = {
+			isa = PBXGroup;
+			children = (
+				F6BB8B8024DEA31000C466C1 /* ofRope.cpp */,
+				F6BB8B8124DEA31000C466C1 /* ofRope.hpp */,
+			);
+			path = ofRope;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -725,8 +733,8 @@
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				F6B5678524D30BE3008E48AF /* rope.cpp in Sources */,
 				F64859ED24D5C03800CCC544 /* of_rope_body.cpp in Sources */,
-				F6B5678A24D332B5008E48AF /* ofRope.cpp in Sources */,
 				F6B5678724D30BE3008E48AF /* R_Body.cpp in Sources */,
+				F6BB8B8224DEA31000C466C1 /* ofRope.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

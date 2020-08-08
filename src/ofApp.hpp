@@ -1,28 +1,23 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofRope.hpp"
+#include "./ofRope/ofRope.hpp"
+#include "../rope/class/R_DaP5.hpp"
 
 class ofApp : public ofBaseApp{
 
 public:
+	// Rope template, with processing data and Rope arg and function
+	R_DaP5 p5;
+	Rope r;
+	void ofRope();
+
 	// body part describe in of_rope_body.cpp
 	vec2<float> dest;
 	void body_setup();
 	void body_draw();
 	R_Body body;
 
-
-
-
-	// rope part
-	Rope r;
-	void rope();
-	// rope processing
-	float width = 0;
-	float height = 0;
-	float mouseX = 0;
-	float mouseY = 0;
   
   // project part
 
