@@ -2,6 +2,8 @@
 
 #include "ofMain.h"
 #include "./ofRope/ofRope.hpp"
+
+// must be enable if it call elsewhre
 #include "../rope/class/R_DaP5.hpp"
 
 class ofApp : public ofBaseApp{
