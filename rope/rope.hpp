@@ -1,6 +1,6 @@
 /**
 * Rope C++
-* v 0.0.8
+* v 0.0.9
 * 2020-2020
 * Rope C++ library adaptation in the same way of Rope from Processing
 * Rope mean ROmanesco Processing Environment at the beginning !!!
@@ -20,6 +20,7 @@
 
 #include "./template/utils/r_utils.hpp"
 #include "./class/R_Lexicon.hpp"
+#include "./template/vec/vec3.hpp"
 
 // class Rope
 class Rope : public R_Lexicon {
@@ -37,8 +38,6 @@ public:
 
 	virtual int instance() const;
 
-
-
 	// color
 	int color(int c);
 	int color(float gray);
@@ -50,7 +49,14 @@ public:
 	float red() const;
 	float gre() const;
 	float blu() const;
+
+	float hue() const;
+	float sat() const;
+	float bri() const;
+
 	float alp() const;
+
+	int color() const;
 
 	int colorMode();
 	void colorMode(int mode, float x, float y, float z, float a);
@@ -60,12 +66,11 @@ public:
 	void colorMode(int mode);
 
 
-
-	// color calc
 protected:
 	bool calcAlpha = true;
 
 	int calcColor = 0;
+
 	int calcAi = 0;
 	int calcRi = 0;
 	int calcGi = 0;
@@ -85,6 +90,8 @@ protected:
 
 	// color calc ARGB
 	void colorCalcARGB(int &argb, float &alpha);
+
+	vec3<float>	rgb_to_hsb_calc() const;
 };
 
 
