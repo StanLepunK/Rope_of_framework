@@ -1,3 +1,8 @@
+/**
+* ofApp
+* 2020-2020
+* v 0.0.2
+*/
 #pragma once
 
 #include "ofMain.h"
@@ -14,14 +19,22 @@ public:
 	Rope r;
 	void ofRope();
 
+	// useful var
+	float rx = 0;
+	float ry = 0;
+	float rz = 0;
+
 	// body part describe in of_rope_body.cpp
 	vec2<float> dest;
 	void body_setup();
 	void body_draw();
 	R_Body body;
 
-  
-  // project part
+	//shape test
+	void shape_setup();
+	void shape_draw();
+
+
 
 
 	// openframwork part
