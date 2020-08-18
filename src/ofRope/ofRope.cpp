@@ -1,7 +1,7 @@
 /**
 * ofRope describe
 * 2020-2020
-* v 0.0.3
+* v 0.1.0
 */
 
 #include "ofRope.hpp"
@@ -14,6 +14,7 @@ void ofApp::ofRope() {
 	p5.mouse_x = ofGetMouseX();
 	p5.mouse_y = ofGetMouseY();
 	p5.mouse_pressed = ofGetMousePressed();
+	p5.frame_count = ofGetFrameNum();
 }
 
 
@@ -29,22 +30,45 @@ void translate(vec3<float> pos) {
 
 
 // rotate
-void rotateX(float x) {
+void rotate_x(float x) {
 	ofRotateXRad(x);
 }
 
-void rotateY(float y) {
+void rotate_y(float y) {
 	ofRotateYRad(y);
 }
 
-void rotateZ(float z) {
+void rotate_z(float z) {
 	ofRotateZRad(z);
 }
 
 void rotate(float x, float y, float z) {
-	rotateX(x);
-	rotateY(y);
-	rotateZ(z);
+	rotate_x(x);
+	rotate_y(y);
+	rotate_z(z);
+}
+
+// normal rotation 
+// based on matrix and quaternion.
+void rotate_normal(float x, float y ,float z, char ax, char ay, char az) {
+	rotate_normal(vec3<float>(x,y,z), vec3<char>(ax,ay,az));
+}
+
+void rotate_normal(vec3<float> pos, vec3<char> axis) {
+	glm::vec3 normal(pos.x(),pos.y(),pos.z());
+	normal = glm::normalize(normal);
+	// axis rotation.
+	// glm::vec3 axis_glm(0, 0, 1);
+	glm::vec3 axis_glm(axis.x(),axis.y(),axis.z());
+	// create the quaternion which represents the rotation between normal and axis
+	glm::quat rotation = glm::rotation(axis_glm, normal);	
+	// transform the quaternion to a 4x4 matrix using the glm function for such.
+	glm::mat4 rotationMatrix = glm::toMat4(rotation);
+	// multiply the rotation matrix with the current matrix.
+	// This means that the rotation matrix
+	// thus the transformation it represents
+	// will be applied on over the current transformation matrix.
+	ofMultMatrix(rotationMatrix);
 }
 
 

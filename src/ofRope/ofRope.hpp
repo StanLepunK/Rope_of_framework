@@ -1,7 +1,7 @@
 /**
 * ofRope header
 * 2020-2020
-* v 0.0.3
+* v 0.1.1
 */
 #ifndef OFROPE_H
 # define OFROPE_H
@@ -17,10 +17,13 @@
 void translate(float x, float y, float z = 0);
 void translate(vec3<float> pos);
 
-void rotateX(float x);
-void rotateY(float y);
-void rotateZ(float z);
+void rotate_x(float x);
+void rotate_y(float y);
+void rotate_z(float z);
 void rotate(float x, float y, float z = 0);
+void rotate_normal(float x, float y, float z, char ax, char ay, char az);
+void rotate_normal(vec3<float> pos, vec3<char> axis);
+
 
 void line_2d(vec2<float> a, vec2<float> b);
 void line_3d(vec3<float> a, vec3<float> b);

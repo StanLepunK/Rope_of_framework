@@ -1,7 +1,7 @@
 /**
 * ofApp
 * 2020-2020
-* v 0.0.2
+* v 0.0.3
 */
 #pragma once
 
@@ -9,13 +9,13 @@
 #include "./ofRope/ofRope.hpp"
 
 // must be enable if it call elsewhre
-#include "../rope/class/R_DaP5.hpp"
+#include "../rope/class/R_P5.hpp"
 
 class ofApp : public ofBaseApp{
 
 public:
 	// Rope template, with processing data and Rope arg and function
-	R_DaP5 p5;
+	R_P5 p5;
 	Rope r;
 	void ofRope();
 
@@ -31,8 +31,10 @@ public:
 	R_Body body;
 
 	//shape test
-	void shape_setup();
 	void shape_draw();
+
+	//rotate test
+	void rotate_normal_draw();
 
 
 

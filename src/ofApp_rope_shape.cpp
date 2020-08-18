@@ -5,18 +5,14 @@
 * v 0.0.1
 */
 void show_cone(float px, float py, float rx, float ry, float rz) {
-	// ofPopMatrix();
+	// ofPushMatrix();
 	translate(px,py);
-	rotateX(rx);
-	rotateY(ry);
-	rotateZ(rz);
+	rotate_x(rx);
+	rotate_y(ry);
+	rotate_z(rz);
 	cone(100,200);
 	// cone(px, py, 100,200);
-	// ofPushMatrix();
-}
-
-void ofApp::shape_setup() {
-
+	// ofPopMatrix();
 }
 
 

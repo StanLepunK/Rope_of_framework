@@ -11,6 +11,7 @@
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		F64BC12424EAF46800BDC76A /* ofApp_rope_body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F64BC12224EAF46800BDC76A /* ofApp_rope_body.cpp */; };
 		F64BC12524EAF46800BDC76A /* ofApp_rope_shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F64BC12324EAF46800BDC76A /* ofApp_rope_shape.cpp */; };
+		F64BC12724EC231C00BDC76A /* ofApp_rope_rotate_normal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F64BC12624EC231C00BDC76A /* ofApp_rope_rotate_normal.cpp */; };
 		F6B5678524D30BE3008E48AF /* rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5677324D30BE3008E48AF /* rope.cpp */; };
 		F6B5678624D30BE3008E48AF /* rope_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5677424D30BE3008E48AF /* rope_functions.cpp */; };
 		F6B5678724D30BE3008E48AF /* R_Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5678024D30BE3008E48AF /* R_Body.cpp */; };
@@ -212,6 +213,8 @@
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		F64BC12224EAF46800BDC76A /* ofApp_rope_body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp_rope_body.cpp; sourceTree = "<group>"; };
 		F64BC12324EAF46800BDC76A /* ofApp_rope_shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp_rope_shape.cpp; sourceTree = "<group>"; };
+		F64BC12624EC231C00BDC76A /* ofApp_rope_rotate_normal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofApp_rope_rotate_normal.cpp; path = src/ofApp_rope_rotate_normal.cpp; sourceTree = SOURCE_ROOT; };
+		F64BC12824EC235A00BDC76A /* R_P5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = R_P5.hpp; sourceTree = "<group>"; };
 		F6B5677024D30A0B008E48AF /* ofApp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofApp.hpp; sourceTree = "<group>"; };
 		F6B5677324D30BE3008E48AF /* rope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rope.cpp; sourceTree = "<group>"; };
 		F6B5677424D30BE3008E48AF /* rope_functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rope_functions.cpp; sourceTree = "<group>"; };
@@ -567,6 +570,7 @@
 		F6B5677224D30BE3008E48AF /* rope */ = {
 			isa = PBXGroup;
 			children = (
+				F64BC12624EC231C00BDC76A /* ofApp_rope_rotate_normal.cpp */,
 				F6B5677324D30BE3008E48AF /* rope.cpp */,
 				F6B5677424D30BE3008E48AF /* rope_functions.cpp */,
 				F6B5677524D30BE3008E48AF /* template */,
@@ -617,6 +621,7 @@
 		F6B5677F24D30BE3008E48AF /* class */ = {
 			isa = PBXGroup;
 			children = (
+				F64BC12824EC235A00BDC76A /* R_P5.hpp */,
 				F6B5678024D30BE3008E48AF /* R_Body.cpp */,
 				F6B5678124D30BE3008E48AF /* R_Body.hpp */,
 				F6B5678224D30BE3008E48AF /* R_Lexicon.hpp */,
@@ -733,6 +738,7 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				F6B5678624D30BE3008E48AF /* rope_functions.cpp in Sources */,
+				F64BC12724EC231C00BDC76A /* ofApp_rope_rotate_normal.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				F6B5678524D30BE3008E48AF /* rope.cpp in Sources */,
 				F64BC12424EAF46800BDC76A /* ofApp_rope_body.cpp in Sources */,

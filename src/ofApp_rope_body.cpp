@@ -2,7 +2,7 @@
 /**
 * body test
 * 2020-2020
-* V0.0.1
+* v 0.0.1
 */
 void ofApp::body_setup() {
 	dest.rand(vec2<float>(p5.width,p5.height));
