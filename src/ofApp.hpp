@@ -33,6 +33,9 @@ public:
 	//shape test
 	void shape_draw();
 
+	// path
+	void path_draw();
+
 	//rotate test
 	void rotate_normal_draw();
 
