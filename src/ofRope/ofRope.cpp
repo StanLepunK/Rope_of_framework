@@ -1,7 +1,7 @@
 /**
 * ofRope describe
 * 2020-2020
-* v 0.1.0
+* v 0.2.0
 */
 
 #include "ofRope.hpp"
@@ -11,10 +11,10 @@ void ofApp::ofRope() {
 	// Processing data
 	p5.width = ofGetWidth();
 	p5.height = ofGetHeight();
-	p5.mouse_x = ofGetMouseX();
-	p5.mouse_y = ofGetMouseY();
-	p5.mouse_pressed = ofGetMousePressed();
-	p5.frame_count = ofGetFrameNum();
+	p5.mouseX = ofGetMouseX();
+	p5.mouseY = ofGetMouseY();
+	p5.mousePressed = ofGetMousePressed();
+	p5.frameCount = ofGetFrameNum();
 }
 
 
