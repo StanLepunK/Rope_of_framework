@@ -11,12 +11,14 @@
 // must be enable if it call elsewhre
 #include "../rope/class/R_P5.hpp"
 
+
+
+
 class ofApp : public ofBaseApp{
 
 public:
 	// Rope template, with processing data and Rope arg and function
 	R_P5 p5;
-	Rope r;
 	void ofRope();
 
 	// event_key
@@ -34,6 +36,10 @@ public:
 
 	//shape test
 	void shape_draw();
+
+	// color test
+	void test_colour();
+
 
 	// data visualazation
 	vector<float> data_list;

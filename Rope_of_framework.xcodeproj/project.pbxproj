@@ -18,6 +18,7 @@
 		F6CFF9D524EF988E009CB0C1 /* body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6CFF9D224EF988E009CB0C1 /* body.cpp */; };
 		F6CFF9DA24EFB9E5009CB0C1 /* dataviz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6CFF9D924EFB9E5009CB0C1 /* dataviz.cpp */; };
 		F6CFF9DC24EFBF07009CB0C1 /* data_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6CFF9DB24EFBF07009CB0C1 /* data_set.cpp */; };
+		F6CFF9DE24F00F8E009CB0C1 /* colour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6CFF9DD24F00F8E009CB0C1 /* colour.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -235,6 +236,7 @@
 		F6CFF9D224EF988E009CB0C1 /* body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = body.cpp; sourceTree = "<group>"; };
 		F6CFF9D924EFB9E5009CB0C1 /* dataviz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dataviz.cpp; sourceTree = "<group>"; };
 		F6CFF9DB24EFBF07009CB0C1 /* data_set.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = data_set.cpp; sourceTree = "<group>"; };
+		F6CFF9DD24F00F8E009CB0C1 /* colour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colour.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -573,6 +575,7 @@
 		F6016A6424EEE53D00B286B2 /* sketch */ = {
 			isa = PBXGroup;
 			children = (
+				F6CFF9DD24F00F8E009CB0C1 /* colour.cpp */,
 				F6CFF9DB24EFBF07009CB0C1 /* data_set.cpp */,
 				F6CFF9D924EFB9E5009CB0C1 /* dataviz.cpp */,
 				F6CFF9D224EF988E009CB0C1 /* body.cpp */,
@@ -758,6 +761,7 @@
 				F6CFF9D524EF988E009CB0C1 /* body.cpp in Sources */,
 				F6B5678624D30BE3008E48AF /* rope_functions.cpp in Sources */,
 				F6CFF9D324EF988E009CB0C1 /* shape.cpp in Sources */,
+				F6CFF9DE24F00F8E009CB0C1 /* colour.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				F6B5678524D30BE3008E48AF /* rope.cpp in Sources */,
 				F6B5678724D30BE3008E48AF /* R_Body.cpp in Sources */,

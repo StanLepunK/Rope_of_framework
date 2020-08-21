@@ -19,8 +19,10 @@ void ofApp::body_draw() {
 	// body.follow(target);
 	body.speed(0.5);
 
-	r.color(r.GRIS_15);
-	ofColor colour(r.red(),r.gre(),r.blu());
+
+	Rope *rope = rope->get_instance();
+	rope->color(rope->GRIS_15);
+	ofColor colour(rope->red(),rope->gre(),rope->blu());
 
 	ofPath b;
 	b.circle(body.x(),body.y(), 10);

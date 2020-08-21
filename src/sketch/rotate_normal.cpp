@@ -8,13 +8,16 @@
 void ofApp::rotate_normal_draw() {
 	// define position
 	float radius = p5.width/5;
-	float x = sin(p5.frame_count * 0.01) * radius;
-	float y = sin(p5.frame_count * 0.02) * radius;
-	float z = sin(p5.frame_count * 0.03) * radius;
+	float x = sin(p5.frameCount * 0.01) * radius;
+	float y = sin(p5.frameCount * 0.02) * radius;
+	float z = sin(p5.frameCount * 0.03) * radius;
 
 	//line
-	r.color(r.SANG);
-	ofColor colour(r.red(),r.gre(),r.blu());
+	// rope.color(rope.SANG);
+	// ofColor colour(rope.red(),rope.gre(),rope.blu());
+	Rope *rope = rope->get_instance();
+	rope->color(rope->SANG);
+	ofColor colour(rope->red(),rope->gre(),rope->blu());
 	ofSetColor(colour);
 	ofSetLineWidth(3.0);
 
@@ -23,8 +26,8 @@ void ofApp::rotate_normal_draw() {
 	line_3d(center, dest + center);
 
 	// cone
-	r.color(r.LIN);
-	colour.set(r.red(),r.gre(),r.blu());
+	rope->color(rope->LIN);
+	colour.set(rope->red(),rope->gre(),rope->blu());
 	ofSetColor(colour);
 
 	translate(dest + center);

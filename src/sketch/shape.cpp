@@ -18,8 +18,9 @@ void show_cone(float px, float py, float rx, float ry, float rz) {
 
 
 void ofApp::shape_draw() {
-	r.color(r.SANG);
-	ofColor colour(r.red(),r.gre(),r.blu());
+	Rope *rope = rope->get_instance();
+	rope->color(rope->SANG);
+	ofColor colour(rope->red(),rope->gre(),rope->blu());
 	ofSetColor(colour);
 
 	// rx += 0.01f;

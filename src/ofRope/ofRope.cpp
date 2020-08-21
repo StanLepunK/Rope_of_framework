@@ -1,7 +1,7 @@
 /**
 * ofRope describe
 * 2020-2020
-* v 0.2.0
+* v 0.2.1
 */
 
 #include "ofRope.hpp"
@@ -15,6 +15,14 @@ void ofApp::ofRope() {
 	p5.mouseY = ofGetMouseY();
 	p5.mousePressed = ofGetMousePressed();
 	p5.frameCount = ofGetFrameNum();
+}
+
+// set color from rope
+// Rope r;
+ofColor colour(int c) {
+	Rope *r = r->get_instance();
+	r->color(c);
+	return ofColor(r->red(),r->gre(),r->blu(),r->alp());
 }
 
 
