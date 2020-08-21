@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
-		F6016A3F24EEDF3D00B286B2 /* ofApp_rope_path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6016A3C24EEDF3D00B286B2 /* ofApp_rope_path.cpp */; };
-		F6016A4024EEDF3D00B286B2 /* ofApp_rope_body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6016A3D24EEDF3D00B286B2 /* ofApp_rope_body.cpp */; };
-		F6016A4124EEDF3D00B286B2 /* ofApp_rope_shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6016A3E24EEDF3D00B286B2 /* ofApp_rope_shape.cpp */; };
-		F64BC12724EC231C00BDC76A /* ofApp_rope_rotate_normal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F64BC12624EC231C00BDC76A /* ofApp_rope_rotate_normal.cpp */; };
 		F6B5678524D30BE3008E48AF /* rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5677324D30BE3008E48AF /* rope.cpp */; };
 		F6B5678624D30BE3008E48AF /* rope_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5677424D30BE3008E48AF /* rope_functions.cpp */; };
 		F6B5678724D30BE3008E48AF /* R_Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5678024D30BE3008E48AF /* R_Body.cpp */; };
 		F6BB8B8224DEA31000C466C1 /* ofRope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BB8B8024DEA31000C466C1 /* ofRope.cpp */; };
+		F6CFF9D324EF988E009CB0C1 /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6CFF9D024EF988E009CB0C1 /* shape.cpp */; };
+		F6CFF9D424EF988E009CB0C1 /* rotate_normal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6CFF9D124EF988E009CB0C1 /* rotate_normal.cpp */; };
+		F6CFF9D524EF988E009CB0C1 /* body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6CFF9D224EF988E009CB0C1 /* body.cpp */; };
+		F6CFF9DA24EFB9E5009CB0C1 /* dataviz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6CFF9D924EFB9E5009CB0C1 /* dataviz.cpp */; };
+		F6CFF9DC24EFBF07009CB0C1 /* data_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6CFF9DB24EFBF07009CB0C1 /* data_set.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -212,10 +213,6 @@
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
-		F6016A3C24EEDF3D00B286B2 /* ofApp_rope_path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp_rope_path.cpp; sourceTree = "<group>"; };
-		F6016A3D24EEDF3D00B286B2 /* ofApp_rope_body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp_rope_body.cpp; sourceTree = "<group>"; };
-		F6016A3E24EEDF3D00B286B2 /* ofApp_rope_shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp_rope_shape.cpp; sourceTree = "<group>"; };
-		F64BC12624EC231C00BDC76A /* ofApp_rope_rotate_normal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofApp_rope_rotate_normal.cpp; path = src/ofApp_rope_rotate_normal.cpp; sourceTree = SOURCE_ROOT; };
 		F64BC12824EC235A00BDC76A /* R_P5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = R_P5.hpp; sourceTree = "<group>"; };
 		F6B5677024D30A0B008E48AF /* ofApp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofApp.hpp; sourceTree = "<group>"; };
 		F6B5677324D30BE3008E48AF /* rope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rope.cpp; sourceTree = "<group>"; };
@@ -233,6 +230,11 @@
 		F6B5678424D30BE3008E48AF /* rope_functions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rope_functions.hpp; sourceTree = "<group>"; };
 		F6BB8B8024DEA31000C466C1 /* ofRope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofRope.cpp; sourceTree = "<group>"; };
 		F6BB8B8124DEA31000C466C1 /* ofRope.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofRope.hpp; sourceTree = "<group>"; };
+		F6CFF9D024EF988E009CB0C1 /* shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shape.cpp; sourceTree = "<group>"; };
+		F6CFF9D124EF988E009CB0C1 /* rotate_normal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rotate_normal.cpp; sourceTree = "<group>"; };
+		F6CFF9D224EF988E009CB0C1 /* body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = body.cpp; sourceTree = "<group>"; };
+		F6CFF9D924EFB9E5009CB0C1 /* dataviz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dataviz.cpp; sourceTree = "<group>"; };
+		F6CFF9DB24EFBF07009CB0C1 /* data_set.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = data_set.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -558,9 +560,7 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				F6016A3D24EEDF3D00B286B2 /* ofApp_rope_body.cpp */,
-				F6016A3C24EEDF3D00B286B2 /* ofApp_rope_path.cpp */,
-				F6016A3E24EEDF3D00B286B2 /* ofApp_rope_shape.cpp */,
+				F6016A6424EEE53D00B286B2 /* sketch */,
 				F6BB8B7F24DEA31000C466C1 /* ofRope */,
 				F6B5677224D30BE3008E48AF /* rope */,
 				F6B5677024D30A0B008E48AF /* ofApp.hpp */,
@@ -570,10 +570,21 @@
 			path = src;
 			sourceTree = SOURCE_ROOT;
 		};
+		F6016A6424EEE53D00B286B2 /* sketch */ = {
+			isa = PBXGroup;
+			children = (
+				F6CFF9DB24EFBF07009CB0C1 /* data_set.cpp */,
+				F6CFF9D924EFB9E5009CB0C1 /* dataviz.cpp */,
+				F6CFF9D224EF988E009CB0C1 /* body.cpp */,
+				F6CFF9D124EF988E009CB0C1 /* rotate_normal.cpp */,
+				F6CFF9D024EF988E009CB0C1 /* shape.cpp */,
+			);
+			path = sketch;
+			sourceTree = "<group>";
+		};
 		F6B5677224D30BE3008E48AF /* rope */ = {
 			isa = PBXGroup;
 			children = (
-				F64BC12624EC231C00BDC76A /* ofApp_rope_rotate_normal.cpp */,
 				F6B5677324D30BE3008E48AF /* rope.cpp */,
 				F6B5677424D30BE3008E48AF /* rope_functions.cpp */,
 				F6B5677524D30BE3008E48AF /* template */,
@@ -740,13 +751,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6CFF9D424EF988E009CB0C1 /* rotate_normal.cpp in Sources */,
+				F6CFF9DA24EFB9E5009CB0C1 /* dataviz.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				F6CFF9DC24EFBF07009CB0C1 /* data_set.cpp in Sources */,
+				F6CFF9D524EF988E009CB0C1 /* body.cpp in Sources */,
 				F6B5678624D30BE3008E48AF /* rope_functions.cpp in Sources */,
-				F64BC12724EC231C00BDC76A /* ofApp_rope_rotate_normal.cpp in Sources */,
-				F6016A3F24EEDF3D00B286B2 /* ofApp_rope_path.cpp in Sources */,
+				F6CFF9D324EF988E009CB0C1 /* shape.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
-				F6016A4024EEDF3D00B286B2 /* ofApp_rope_body.cpp in Sources */,
-				F6016A4124EEDF3D00B286B2 /* ofApp_rope_shape.cpp in Sources */,
 				F6B5678524D30BE3008E48AF /* rope.cpp in Sources */,
 				F6B5678724D30BE3008E48AF /* R_Body.cpp in Sources */,
 				F6BB8B8224DEA31000C466C1 /* ofRope.cpp in Sources */,

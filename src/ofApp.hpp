@@ -19,6 +19,8 @@ public:
 	Rope r;
 	void ofRope();
 
+	// event_key
+
 	// useful var
 	float rx = 0;
 	float ry = 0;
@@ -33,8 +35,10 @@ public:
 	//shape test
 	void shape_draw();
 
-	// path
-	void path_draw();
+	// data visualazation
+	vector<float> data_list;
+	void data_set(vector<float> &data, int num, float min_value, float max_value);
+	void dataviz();
 
 	//rotate test
 	void rotate_normal_draw();
@@ -47,7 +51,7 @@ public:
 	void draw();
  
  	// void update();
-	// void keyPressed(int key);
+	void keyPressed(int key);
 	// void keyReleased(int key);
 	// void mouseMoved(int x, int y );
 	// void mouseDragged(int x, int y, int button);
