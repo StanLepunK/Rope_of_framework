@@ -18,6 +18,7 @@ class ofApp : public ofBaseApp{
 
 public:
 	// Rope template, with processing data and Rope arg and function
+	Rope *r = r->get_instance();
 	R_P5 p5;
 	void ofRope();
 

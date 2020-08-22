@@ -2,7 +2,6 @@
 
 
 void ofApp::test_colour() {
-	Rope *rope = rope->get_instance();
-	ofSetColor(colour(rope->OUTREMER));
+	ofSetColor(get_ofColor(r->OUTREMER));
 	ofDrawCircle(100,100, 100);
 }

@@ -1,13 +1,9 @@
 #include "ofApp.hpp"
-// Rope r;
 
 void ofApp::setup() {
 	ofRope();
-	// rope.color(rope.LIME);
-	// ofColor colour(rope.red(),rope.gre(),rope.blu());
-	Rope *rope = rope->get_instance();
-	rope->color(rope->LIME);
-	ofColor colour(rope->red(),rope->gre(),rope->blu());
+	r->color(r->LIME);
+	ofColor colour(r->red(),r->gre(),r->blu());
 	ofBackground(colour);	// body_setup();
 
 	data_set(data_list, random_int(10,100), 100.0f, p5.height);
