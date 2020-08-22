@@ -1,7 +1,7 @@
 /**
 * ofRope header
 * 2020-2020
-* v 0.1.2
+* v 0.1.3
 */
 #ifndef OFROPE_H
 # define OFROPE_H
@@ -15,9 +15,10 @@
 #include "../../rope/template/math/r_geom.hpp"
 #include <iostream>
 
-ofColor colour(int c);
+// color
+ofColor get_ofColor(int c);
 
-
+// manipulation
 void translate(float x, float y, float z = 0);
 void translate(vec3<float> pos);
 
@@ -28,7 +29,7 @@ void rotate(float x, float y, float z = 0);
 void rotate_normal(float x, float y, float z, char ax, char ay, char az);
 void rotate_normal(vec3<float> pos, vec3<char> axis);
 
-
+// shape
 void line_2d(vec2<float> a, vec2<float> b);
 void line_3d(vec3<float> a, vec3<float> b);
 

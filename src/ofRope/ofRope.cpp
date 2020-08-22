@@ -17,16 +17,21 @@ void ofApp::ofRope() {
 	p5.frameCount = ofGetFrameNum();
 }
 
-// set color from rope
+
+/**
+* color
+*/
 // Rope r;
-ofColor colour(int c) {
+ofColor get_ofColor(int c) {
 	Rope *r = r->get_instance();
 	r->color(c);
 	return ofColor(r->red(),r->gre(),r->blu(),r->alp());
 }
 
 
-
+/**
+* manipulation
+*/
 // translate
 void translate(float x, float y, float z) {
 	ofTranslate(x,y,z);
@@ -80,7 +85,14 @@ void rotate_normal(vec3<float> pos, vec3<char> axis) {
 }
 
 
-// display
+
+
+
+
+
+/**
+* shape
+*/
 // line
 void line_3d(vec3<float> a, vec3<float> b) {
 	ofDrawLine(a.x(),a.y(),a.z(),b.x(),b.y(),b.z());
