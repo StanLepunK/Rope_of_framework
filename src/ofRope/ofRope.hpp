@@ -1,7 +1,7 @@
 /**
 * ofRope header
 * 2020-2020
-* v 0.1.3
+* v 0.1.4
 */
 #ifndef OFROPE_H
 # define OFROPE_H
@@ -10,7 +10,8 @@
 #include "ofMain.h"
 #include "../../rope/class/R_Body.hpp"
 #include "../../rope/rope.hpp"
-#include "../../rope/rope_functions.hpp"
+#include "../../rope/function/rand.hpp"
+#include "../../rope/function/rand_fast.hpp"
 #include "../../rope/template/vec/vec3.hpp"
 #include "../../rope/template/math/r_geom.hpp"
 #include <iostream>

@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		F622C70624FFE4FB00B80C53 /* rand_fast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F622C70224FFE4FB00B80C53 /* rand_fast.cpp */; };
+		F622C70724FFE4FB00B80C53 /* rand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F622C70324FFE4FB00B80C53 /* rand.cpp */; };
 		F6B5678524D30BE3008E48AF /* rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5677324D30BE3008E48AF /* rope.cpp */; };
-		F6B5678624D30BE3008E48AF /* rope_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5677424D30BE3008E48AF /* rope_functions.cpp */; };
 		F6B5678724D30BE3008E48AF /* R_Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B5678024D30BE3008E48AF /* R_Body.cpp */; };
 		F6BB8B8224DEA31000C466C1 /* ofRope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BB8B8024DEA31000C466C1 /* ofRope.cpp */; };
 		F6CFF9D324EF988E009CB0C1 /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6CFF9D024EF988E009CB0C1 /* shape.cpp */; };
@@ -214,10 +215,15 @@
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		F622C70024FFE4FB00B80C53 /* rand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rand.hpp; sourceTree = "<group>"; };
+		F622C70124FFE4FB00B80C53 /* rand_fast.hpp.gch */ = {isa = PBXFileReference; lastKnownFileType = file; path = rand_fast.hpp.gch; sourceTree = "<group>"; };
+		F622C70224FFE4FB00B80C53 /* rand_fast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rand_fast.cpp; sourceTree = "<group>"; };
+		F622C70324FFE4FB00B80C53 /* rand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rand.cpp; sourceTree = "<group>"; };
+		F622C70424FFE4FB00B80C53 /* rand_fast.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rand_fast.hpp; sourceTree = "<group>"; };
+		F622C70524FFE4FB00B80C53 /* rand.hpp.gch */ = {isa = PBXFileReference; lastKnownFileType = file; path = rand.hpp.gch; sourceTree = "<group>"; };
 		F64BC12824EC235A00BDC76A /* R_P5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = R_P5.hpp; sourceTree = "<group>"; };
 		F6B5677024D30A0B008E48AF /* ofApp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofApp.hpp; sourceTree = "<group>"; };
 		F6B5677324D30BE3008E48AF /* rope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rope.cpp; sourceTree = "<group>"; };
-		F6B5677424D30BE3008E48AF /* rope_functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rope_functions.cpp; sourceTree = "<group>"; };
 		F6B5677724D30BE3008E48AF /* r_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = r_utils.hpp; sourceTree = "<group>"; };
 		F6B5677924D30BE3008E48AF /* r_geom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = r_geom.hpp; sourceTree = "<group>"; };
 		F6B5677B24D30BE3008E48AF /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
@@ -228,7 +234,6 @@
 		F6B5678124D30BE3008E48AF /* R_Body.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = R_Body.hpp; sourceTree = "<group>"; };
 		F6B5678224D30BE3008E48AF /* R_Lexicon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = R_Lexicon.hpp; sourceTree = "<group>"; };
 		F6B5678324D30BE3008E48AF /* rope.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rope.hpp; sourceTree = "<group>"; };
-		F6B5678424D30BE3008E48AF /* rope_functions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rope_functions.hpp; sourceTree = "<group>"; };
 		F6BB8B8024DEA31000C466C1 /* ofRope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofRope.cpp; sourceTree = "<group>"; };
 		F6BB8B8124DEA31000C466C1 /* ofRope.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofRope.hpp; sourceTree = "<group>"; };
 		F6CFF9D024EF988E009CB0C1 /* shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shape.cpp; sourceTree = "<group>"; };
@@ -585,15 +590,27 @@
 			path = sketch;
 			sourceTree = "<group>";
 		};
+		F622C6FF24FFE4FB00B80C53 /* function */ = {
+			isa = PBXGroup;
+			children = (
+				F622C70024FFE4FB00B80C53 /* rand.hpp */,
+				F622C70124FFE4FB00B80C53 /* rand_fast.hpp.gch */,
+				F622C70224FFE4FB00B80C53 /* rand_fast.cpp */,
+				F622C70324FFE4FB00B80C53 /* rand.cpp */,
+				F622C70424FFE4FB00B80C53 /* rand_fast.hpp */,
+				F622C70524FFE4FB00B80C53 /* rand.hpp.gch */,
+			);
+			path = function;
+			sourceTree = "<group>";
+		};
 		F6B5677224D30BE3008E48AF /* rope */ = {
 			isa = PBXGroup;
 			children = (
+				F622C6FF24FFE4FB00B80C53 /* function */,
 				F6B5677324D30BE3008E48AF /* rope.cpp */,
-				F6B5677424D30BE3008E48AF /* rope_functions.cpp */,
 				F6B5677524D30BE3008E48AF /* template */,
 				F6B5677F24D30BE3008E48AF /* class */,
 				F6B5678324D30BE3008E48AF /* rope.hpp */,
-				F6B5678424D30BE3008E48AF /* rope_functions.hpp */,
 			);
 			path = rope;
 			sourceTree = SOURCE_ROOT;
@@ -757,12 +774,13 @@
 				F6CFF9D424EF988E009CB0C1 /* rotate_normal.cpp in Sources */,
 				F6CFF9DA24EFB9E5009CB0C1 /* dataviz.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				F622C70724FFE4FB00B80C53 /* rand.cpp in Sources */,
 				F6CFF9DC24EFBF07009CB0C1 /* data_set.cpp in Sources */,
 				F6CFF9D524EF988E009CB0C1 /* body.cpp in Sources */,
-				F6B5678624D30BE3008E48AF /* rope_functions.cpp in Sources */,
 				F6CFF9D324EF988E009CB0C1 /* shape.cpp in Sources */,
 				F6CFF9DE24F00F8E009CB0C1 /* colour.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				F622C70624FFE4FB00B80C53 /* rand_fast.cpp in Sources */,
 				F6B5678524D30BE3008E48AF /* rope.cpp in Sources */,
 				F6B5678724D30BE3008E48AF /* R_Body.cpp in Sources */,
 				F6BB8B8224DEA31000C466C1 /* ofRope.cpp in Sources */,
